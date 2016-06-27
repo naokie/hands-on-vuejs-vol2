@@ -1,10 +1,13 @@
 hands-on-vuejs-vol2
 ===================
 
+---
+
 ## Web Components とは？
 
 - Web の再利用可能なパーツ作成の仕様。
 
+---
 
 ### 再利用可能なパーツを考える上での悩み
 
@@ -13,6 +16,7 @@ hands-on-vuejs-vol2
 - CSS の意図しない適用範囲
 - JavaScript のDOM構造への依存
 
+---
 
 ### 利用のメリット
 
@@ -20,6 +24,7 @@ hands-on-vuejs-vol2
 - スタイルの適用範囲を絞り込む
 - 複雑な構造を外部から見えなくする
 
+---
 
 ### 構成するリソース
 
@@ -28,6 +33,7 @@ hands-on-vuejs-vol2
 3. HTML Template
 4. Custom Elements
 
+---
 
 ### ブラウザ対応状況
 
@@ -39,21 +45,26 @@ http://webcomponents.org/
 - 開発から4年でそろそろ？
 - Vue.js ならば…
 
+---
 
 ## Vue.js と Web Components
 
-- 2つの重要なコンセプト
+- Vue.js の2つの重要なコンセプト
   - リアクティブデータバインディング
   - コンポーネントシステム
 
+---
 
 ### Vue.js のコンポーネントシステム
 
 Custom Elements の仕様に沿った構文を実装
 
+例えば…
+
 - slot 要素
 - is 属性
 
+---
 
 ### 大規模アプリケーション例
 
@@ -68,3 +79,5 @@ Custom Elements の仕様に沿った構文を実装
 ```
 
 ![http://jp.vuejs.org/images/components.png](http://jp.vuejs.org/images/components.png)
+
+---

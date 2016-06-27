@@ -1,0 +1,18 @@
+{
+  "name": "hands-on-vuejs-vol2",
+  "version": "1.0.0",
+  "description": "hands-on-vuejs-vol2 ===================",
+  "main": "index.js",
+  "scripts": {
+    "start": "reveal-md README.md --theme solarized --separator '^---\n'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.dena.jp/naoki-endo/hands-on-vuejs-vol2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reveal-md": "0.0.29"
+  }
+}
