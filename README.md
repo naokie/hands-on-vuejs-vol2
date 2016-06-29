@@ -5,7 +5,7 @@ hands-on-vuejs-vol2
 
 ## Web Components とは？
 
-- Web の再利用可能なパーツ作成の仕様。
+- Web の再利用可能なパーツ作成の仕様
 
 ---
 
@@ -37,7 +37,11 @@ hands-on-vuejs-vol2
 
 ### ブラウザ対応状況
 
-http://webcomponents.org/
+---
+
+![images/webcomponents_support_browser.png](images/webcomponents_support_browser.png)
+
+---
 
 - Google 主導でブラウザベンダの足並みバラバラ
 - Polyfill は製品で実装実績がとても少ない
@@ -86,16 +90,23 @@ Custom Elements の仕様に沿った構文を実装
 
 - 前回（Vol.1）の続き
   - http://codepen.io/55enokky/pen/GqpmrP
-  - 途中経過の保存にログインしてForkを推奨
-- Vue.js でコンポーネント化1
-- Vue.js でコンポーネント化2
-- Vue.js でコンポーネント化3
+  - 途中経過の保存のために、ログインしてForkを推奨
+- Todo コンポーネントの作成
+- hoge
+- hoge
+
+---
+
+### Vol.1 成果物
+
+![images/vol1_sample.png](images/vol1_sample.png)
 
 ---
 
 ### Vol.1 テンプレート
 
 ```html
+<div id="my-app">
 <!-- 新規タスクの追加 -->
 <p>
   NewTask:
@@ -113,6 +124,7 @@ Custom Elements の仕様に沿った構文を実装
 </ul>
 <!-- 残りタスクのカウント表示 -->
 <p>Remaining Tasks: {{ remains }}/{{ todos.length }}</p>
+</div>
 ```
 
 ---
@@ -122,7 +134,7 @@ Custom Elements の仕様に沿った構文を実装
 ```javascript
 var vm = new Vue({
   el: '#my-app',  // マウントする要素
-  data: {  // プロキシするずべてのプロパティ
+  data: {  // プロキシするすべてのプロパティ
     newTask: '',
     todos: [
       { task: '牛乳を買う', isCompleted: false },
@@ -157,8 +169,8 @@ var vm = new Vue({
 
 ### 再利用可能な単位？
 
-- 同じページで繰り返し表示する（リスト表示）
-- サイト内で繰り返し利用する（ウィジェット表示）
+1. 同じページで繰り返し表示する（リスト表示）
+2. サイト内で繰り返し利用する（ウィジェット表示）
 
 ---
 
@@ -219,6 +231,7 @@ var Todo = Vue.extend({
   }
 });
 ```
+
 ---
 
 #### コンポーネントを登録
@@ -293,3 +306,103 @@ var vm = new Vue({
   }
 });
 ```
+
+---
+
+### App コンポーネント
+
+---
+
+#### HTML Template を切り出し
+
+```html
+<script type="text/template" id="t_app">
+  <!-- div要素で囲む -->
+  <div>
+    <p>
+      NewTask:
+      <input type="text" v-model="newTask" />
+      <button v-on:click="addTodo">Add</button>
+    </p>
+    <hr />
+    <ul>
+      <todo v-for="todo in todos" :todo="todo"></todo>
+    </ul>
+    <p>Remaining Tasks: {{ remains }}/{{ todos.length }}</p>
+  </div>
+</script>
+```
+
+---
+
+#### フラグメントインスタンス
+
+- テンプレートのコンテンツは、カスタム要素を置き換える
+- テンプレートは単一のルート要素を持つのが推奨
+
+---
+
+#### 切り出した箇所をカスタム要素で置き換え
+
+```html
+<app :todos="todos"></app>
+```
+
+---
+
+#### Vueコンポーネントの作成
+
+```javascript
+var App = Vue.extend({
+  template: '#t_app',
+  // コンポーネント定義では初期データオブジェクトを返す関数として宣言する
+  data: function() {
+    return {
+      newTask: '',
+    };
+  },
+  props:  {
+    'todos': {
+      required: true
+    }
+  },
+  ...
+  components: {
+    Todo: Todo
+  }
+});
+```
+
+---
+
+#### コンポーネントを登録
+
+```javascript
+var vm = new Vue({
+  el: '#my-app',
+  data: {
+    todos: [
+      { task: '牛乳を買う', isCompleted: false },
+      { task: 'プロテインを買う', isCompleted: true },
+      { task: 'スポーツドリンクを買う', isCompleted: false }
+    ]
+  },
+  components: {
+    App: App
+  }
+});
+```
+
+---
+
+### 再利用可能なパーツの完成
+
+```html
+<div id="my-app">
+  <app :todos="todos"></app>
+  <app :todos="todos"></app>
+  <app :todos="todos"></app>
+</div>
+```
+
+---
