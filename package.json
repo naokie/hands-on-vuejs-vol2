@@ -1,10 +1,10 @@
 {
   "name": "hands-on-vuejs-vol2",
   "version": "1.0.0",
-  "description": "hands-on-vuejs-vol2 ===================",
+  "description": "hands-on-vuejs-vol2",
   "main": "index.js",
   "scripts": {
-    "start": "reveal-md README.md --theme solarized --separator '^---\n'"
+    "start": "reveal-md README.md --theme solarized --separator '\n\n'"
   },
   "repository": {
     "type": "git",

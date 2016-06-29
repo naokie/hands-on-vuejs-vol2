@@ -1,13 +1,11 @@
 hands-on-vuejs-vol2
 ===================
 
----
 
 ## Web Components とは？
 
 - Web の再利用可能なパーツ作成の仕様
 
----
 
 ### 再利用可能なパーツを考える上での悩み
 
@@ -16,7 +14,6 @@ hands-on-vuejs-vol2
 - CSS の意図しない適用範囲
 - JavaScript のDOM構造への依存
 
----
 
 ### 利用のメリット
 
@@ -24,7 +21,6 @@ hands-on-vuejs-vol2
 - スタイルの適用範囲を絞り込む
 - 複雑な構造を外部から見えなくする
 
----
 
 ### 構成するリソース
 
@@ -33,15 +29,12 @@ hands-on-vuejs-vol2
 3. HTML Template
 4. Custom Elements
 
----
 
 ### ブラウザ対応状況
 
----
 
 ![images/webcomponents_support_browser.png](images/webcomponents_support_browser.png)
 
----
 
 - Google 主導でブラウザベンダの足並みバラバラ
 - Polyfill は製品で実装実績がとても少ない
@@ -49,7 +42,6 @@ hands-on-vuejs-vol2
 - 開発から4年でそろそろ？
 - Vue.js ならば…
 
----
 
 ## Vue.js と Web Components
 
@@ -57,7 +49,6 @@ hands-on-vuejs-vol2
   - リアクティブデータバインディング
   - コンポーネントシステム
 
----
 
 ### Vue.js のコンポーネントシステム
 
@@ -68,9 +59,10 @@ Custom Elements の仕様に沿った構文を実装
 - slot 要素
 - is 属性
 
----
 
 ### 大規模アプリケーション例
+
+![http://jp.vuejs.org/images/components.png](http://jp.vuejs.org/images/components.png)
 
 ```html
 <div id="app">
@@ -82,26 +74,20 @@ Custom Elements の仕様に沿った構文を実装
 </div>
 ```
 
-![http://jp.vuejs.org/images/components.png](http://jp.vuejs.org/images/components.png)
 
----
-
-## 本日のハンズオン
+## コンポーネントの作成をやってみよう
 
 - 前回（Vol.1）の続き
   - http://codepen.io/55enokky/pen/GqpmrP
   - 途中経過の保存のために、ログインしてForkを推奨
 - Todo コンポーネントの作成
-- hoge
-- hoge
+- App コンポーネントの作成
 
----
 
 ### Vol.1 成果物
 
 ![images/vol1_sample.png](images/vol1_sample.png)
 
----
 
 ### Vol.1 テンプレート
 
@@ -127,7 +113,6 @@ Custom Elements の仕様に沿った構文を実装
 </div>
 ```
 
----
 
 ### Vol.1 Vue インスタンス
 
@@ -165,18 +150,18 @@ var vm = new Vue({
 });
 ```
 
----
 
 ### 再利用可能な単位？
 
 1. 同じページで繰り返し表示する（リスト表示）
 2. サイト内で繰り返し利用する（ウィジェット表示）
 
----
+
+### タスク1つを構成しているパーツをコンポーネント化
+
 
 ### Todo コンポーネント
 
----
 
 #### HTML Template を切り出し
 
@@ -190,7 +175,6 @@ var vm = new Vue({
 </script>
 ```
 
----
 
 #### 切り出した箇所をカスタム要素で置き換え
 
@@ -203,7 +187,6 @@ var vm = new Vue({
 - コンポーネントインスタンスは各自にスコープを持っている
 - 子コンポーネントは親データを参照できない
 
----
 
 #### Props
 
@@ -217,7 +200,6 @@ var vm = new Vue({
   - `.once` を使用して one-time バインディングします
 - 検証要件を設定可能
 
----
 
 #### Vueコンポーネントの作成
 
@@ -232,7 +214,6 @@ var Todo = Vue.extend({
 });
 ```
 
----
 
 #### コンポーネントを登録
 
@@ -245,14 +226,12 @@ var vm = new Vue({
 });
 ```
 
----
 
 #### 動作の確認
 
 - チェックマークの付け外し
 - タスクの削除
 
----
 
 #### タスクの削除
 
@@ -266,7 +245,6 @@ var vm = new Vue({
 - 子コンポーネントはイベントのみ通知
 - 親子間でのイベント管理が必要に
 
----
 
 #### カスタムイベント
 
@@ -277,7 +255,6 @@ var vm = new Vue({
 - `$dispatch()` を使用して親方向にイベントを送出します
 - `$broadcast()` を使用して子孫方向にイベントを創出します
 
----
 
 #### 子コンポーネントからイベントを送出
 
@@ -292,7 +269,6 @@ var Todo = Vue.extend({
 });
 ```
 
----
 
 #### 親コンポーネントでイベントをリッスン
 
@@ -300,18 +276,19 @@ var Todo = Vue.extend({
 var vm = new Vue({
   ...
   events: {
-    delete: function(todo) {
+    'delete': function(todo) {
       this.todos.$remove(todo);
     }
   }
 });
 ```
 
----
+
+### 小さなアプリ（ウィジェット）をコンポーネント化
+
 
 ### App コンポーネント
 
----
 
 #### HTML Template を切り出し
 
@@ -333,14 +310,12 @@ var vm = new Vue({
 </script>
 ```
 
----
 
 #### フラグメントインスタンス
 
 - テンプレートのコンテンツは、カスタム要素を置き換える
 - テンプレートは単一のルート要素を持つのが推奨
 
----
 
 #### 切り出した箇所をカスタム要素で置き換え
 
@@ -348,7 +323,6 @@ var vm = new Vue({
 <app :todos="todos"></app>
 ```
 
----
 
 #### Vueコンポーネントの作成
 
@@ -373,7 +347,6 @@ var App = Vue.extend({
 });
 ```
 
----
 
 #### コンポーネントを登録
 
@@ -387,13 +360,17 @@ var vm = new Vue({
       { task: 'スポーツドリンクを買う', isCompleted: false }
     ]
   },
+  events: {
+    'delete': function(todo) {
+      this.todos.$remove(todo);
+    }
+  }
   components: {
     App: App
   }
 });
 ```
 
----
 
 ### 再利用可能なパーツの完成
 
@@ -405,4 +382,110 @@ var vm = new Vue({
 </div>
 ```
 
----
+
+### One more thing...
+
+
+### App コンポーネントごとに見出しを追加
+
+
+#### スロット
+
+- コンポーネント使用者がコンテンツを追加する仕組み
+- 親スコープでコンポーネントにコンテンツを追加
+- 名前つきスロットで複数持つことも可能
+
+
+#### テンプレートに slot 要素を追加
+
+```html
+<script type="text/template" id="t_app">
+  <div>
+    <slot></slot>
+    ...
+  </div>
+</script>
+```
+
+
+#### App コンポーネント使用箇所で見出しを追加
+
+
+```html
+<div id="my-app">
+  <app :todos="todos">
+    <h1>メイン</h1>
+  </app>
+  <app :todos="todos">
+    <h1>サブ</h1>
+  </app>
+  <app :todos="todos"></app>
+</div>
+```
+
+
+### やってみよう
+
+
+### NewTask コンポーネント
+
+
+```html
+<script type="text/template" id="t_newtask">
+  <p>
+    NewTask:
+    <input type="text" v-model="newTask" />
+    <button v-on:click="addTodo">Add</button>
+  </p>
+</script>
+```
+
+
+```javascript
+var NewTask = Vue.extend({
+  template: '#t_newtask',
+  data: function() {
+    return {
+      newTask: '',
+    };
+  },
+  methods: {
+    addTodo: function() {
+      if (this.newTask == '') return;
+      this.$dispatch('add-todo', this.newTask)
+      this.newTask = '';
+    }
+  }
+});
+```
+
+
+```javascript
+var App = Vue.extend({
+  ...
+  components: {
+    Todo: Todo,
+    NewTask: NewTask
+  }
+});
+```
+
+
+```javascript
+var vm = new Vue({
+  events: {
+    ...
+    'add-todo': function(newTask) {
+      this.todos.push(
+        { task: newTask, isCompleted: false }
+      );
+    }
+  },
+  ...
+});
+```
+
+
+### 実装サンプル
+
+http://codepen.io/naokie/pen/aZJoGP
