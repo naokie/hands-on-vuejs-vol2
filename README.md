@@ -1,5 +1,4 @@
-hands-on-vuejs-vol2
-===================
+# Vue.jsでコンポーネント入門！ハンズオン勉強会
 
 
 ## Web Components とは？
