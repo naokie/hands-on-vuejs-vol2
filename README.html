@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(101, 123, 131); overflow: auto; background-color: rgb(253, 246, 227); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(30, 36, 39); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(30, 36, 39); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(144, 163, 169); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(0, 43, 54); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(144, 163, 169); border-color: rgb(248, 222, 151); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(248, 222, 151); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(30, 36, 39); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(248, 222, 151); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(30, 36, 39); background-color: rgb(251, 237, 198); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(252, 240, 208); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(30, 36, 39); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(248, 222, 151) rgb(248, 222, 151) rgb(246, 212, 122); background-color: rgb(251, 237, 198); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  color: #657b83;
+  background-color: #fdf6e3;
+}
+pre.editor-colors .gutter,
+.host .gutter {
+  color: #657b83;
+  background-color: #eee8d5;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  background-color: #e8e0c6;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: #dcd0a9;
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: #dcd0a9;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-color: #002b36;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #eee8d5;
+}
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after,
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded {
+  color: #d33682;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-color: #d33682;
+}
+.comment {
+  color: #93a1a1;
+  font-style: italic;
+}
+.string.quoted {
+  color: #2aa198;
+}
+.string.regexp {
+  color: #dc322f;
+}
+.constant.numeric {
+  color: #d33682;
+}
+.constant.language {
+  color: #b58900;
+}
+.constant.character,
+.constant.other {
+  color: #cb4b16;
+}
+.variable {
+  color: #268bd2;
+}
+.keyword {
+  color: #859900;
+}
+.storage {
+  color: #859900;
+}
+.entity.name.class,
+.entity.name.type,
+.entity.name.function {
+  color: #268bd2;
+}
+.entity.other.attribute-name {
+  color: #657b83;
+}
+.support.function {
+  color: #268bd2;
+}
+.support.function.builtin {
+  color: #859900;
+}
+.support.type,
+.support.class {
+  color: #859900;
+}
+.tag.entity.name {
+  color: #268bd2;
+}
+.tag.punctuation.definition.html,
+.tag.punctuation.definition.begin,
+.tag.punctuation.definition.end {
+  color: #93a1a1;
+}
+.invalid.deprecated {
+  color: #b58900;
+  text-decoration: underline;
+}
+.invalid.illegal {
+  color: #dc322f;
+  text-decoration: underline;
+}
+.none {
+  color: #657b83;
+}
+.source.c .meta.preprocessor,
+.source.cpp .meta.preprocessor {
+  color: #dc322f;
+}
+.source.c .keyword.control.directive,
+.source.cpp .keyword.control.directive {
+  color: #cb4b16;
+}
+.source.c .punctuation.string,
+.source.cpp .punctuation.string {
+  color: #2aa198;
+}
+.source.c .constant,
+.source.cpp .constant {
+  color: #cb4b16;
+}
+.source.c .constant.numeric,
+.source.cpp .constant.numeric,
+.source.c .constant.language.c,
+.source.cpp .constant.language.c {
+  color: #2aa198;
+}
+.source.c .storage,
+.source.cpp .storage {
+  color: #b58900;
+}
+.source.c .entity,
+.source.cpp .entity {
+  color: #657b83;
+}
+.source.c .entity.name.function.preprocessor,
+.source.cpp .entity.name.function.preprocessor {
+  color: #dc322f;
+}
+.source.c .support.type,
+.source.cpp .support.type {
+  color: #b58900;
+}
+.source.c .support.type.posix-reserved,
+.source.cpp .support.type.posix-reserved {
+  color: #657b83;
+}
+.source.c .variable.other.dot-access,
+.source.cpp .variable.other.dot-access {
+  color: #657b83;
+}
+.source.c .variable.parameter.preprocessor,
+.source.cpp .variable.parameter.preprocessor {
+  color: #dc322f;
+}
+.source.coffee .support.class {
+  color: #859900;
+}
+.source.coffee .variable,
+.source.coffee .entity.name.function,
+.source.coffee .entity.name.class {
+  color: #268bd2;
+}
+.source.coffee .variable.parameter.function {
+  color: #657b83;
+}
+.source.coffee .variable.other.readwrite {
+  color: #859900;
+}
+.source.coffee .storage.type.function {
+  color: #859900;
+}
+.source.coffee .entity.name {
+  color: #657b83;
+}
+.source.coffee .meta.brace.round,
+.source.coffee .meta.brace.square {
+  color: #657b83;
+}
+.source.coffee .meta.delimiter {
+  color: #657b83;
+}
+.source.coffee .storage.type.class {
+  color: #859900;
+}
+.source.coffee .punctuation.terminator {
+  color: #657b83;
+}
+.source.coffee .punctuation.section.embedded {
+  color: #dc322f;
+}
+.source.coffee .constant.numeric {
+  color: #d33682;
+}
+.source.coffee .constant.language.boolean {
+  color: #b58900;
+}
+.source.css .punctuation.separator,
+.source.css .punctuation.terminator {
+  color: #657b83;
+}
+.source.css .punctuation.property-list.begin,
+.source.css .punctuation.property-list.end {
+  color: #dc322f;
+}
+.source.css .punctuation.section.function {
+  color: #2aa198;
+}
+.source.css .entity.name {
+  color: #859900;
+}
+.source.css .attribute-name.class,
+.source.css .id {
+  color: #268bd2;
+}
+.source.css .pseudo-element,
+.source.css .pseudo-class {
+  color: #cb4b16;
+}
+.source.css .property-value {
+  color: #2aa198;
+}
+.source.css .constant.numeric {
+  color: #2aa198;
+}
+.source.css .constant.numeric .unit {
+  color: #2aa198;
+}
+.source.css .rgb-value {
+  color: #2aa198;
+}
+.source.css .support.constant {
+  color: #2aa198;
+}
+.source.css .support.constant.media {
+  color: #dc322f;
+}
+.source.css .keyword.important {
+  color: #dc322f;
+}
+.source.less .keyword.unit,
+.source.scss .keyword.unit {
+  color: #2aa198;
+}
+.source.go .operator {
+  color: #657b83;
+}
+.source.go .operator.assignment {
+  color: #859900;
+}
+.source.java .keyword.operator {
+  color: #859900;
+}
+.source.java .keyword.import {
+  color: #cb4b16;
+}
+.source.java .storage.modifier.import {
+  color: #93a1a1;
+}
+.source.java .meta.class .storage.modifier {
+  color: #b58900;
+}
+.source.java .meta.class .meta.class.identifier .entity.name.type.class {
+  color: #268bd2;
+}
+.source.java .storage.type.primitive.array {
+  color: #859900;
+}
+.source.java .constant.numeric {
+  color: #d33682;
+}
+.source.java .constant.other {
+  color: #cb4b16;
+}
+.source.java .storage.type {
+  color: #859900;
+}
+.source.java .meta.method-call {
+  color: #dc322f;
+}
+.source.java .meta.method-call .meta.method {
+  color: #6c71c4;
+}
+.source.java .meta.method-call .punctuation.definition.seperator.parameter {
+  color: #859900;
+}
+.source.java .punctuation.definition.method-parameters {
+  color: #586e75;
+}
+.source.js .constant {
+  color: #859900;
+}
+.source.js .comma {
+  color: #657b83;
+}
+.source.js .support.class {
+  color: #859900;
+}
+.source.js .entity.name.type {
+  color: #b58900;
+}
+.source.js .entity.name {
+  color: #657b83;
+}
+.source.js .meta.brace {
+  color: #657b83;
+}
+.source.js .keyword {
+  color: #657b83;
+}
+.source.js .keyword.operator.new {
+  color: #859900;
+}
+.source.js .keyword.control {
+  color: #859900;
+}
+.source.js .keyword.control.regexp {
+  color: #2aa198;
+}
+.source.js .variable {
+  color: #268bd2;
+}
+.source.js .variable.parameter {
+  color: #657b83;
+}
+.source.js .regexp {
+  color: #2aa198;
+}
+.source.js .support.function {
+  color: #6c71c4;
+}
+.source.js .support.constant {
+  color: #657b83;
+}
+.source.js .constant.numeric {
+  color: #657b83;
+}
+.source.js .punctuation.terminator.statement {
+  color: #657b83;
+}
+.source.js .meta.delimiter.method.period {
+  color: #657b83;
+}
+.source.js .meta.brace.square {
+  color: #268bd2;
+}
+.source.js .meta.brace.curly {
+  color: #268bd2;
+}
+.source.js .string.quoted.template .embedded.source {
+  color: #657b83;
+}
+.source.js .string.quoted.template .embedded.source > .embedded.punctuation {
+  color: #dc322f;
+}
+.source.js.jsx .entity.name.tag {
+  color: #268bd2;
+}
+.gfm .link .entity {
+  color: #6c71c4;
+}
+.gfm .list.ordered {
+  color: #859900;
+}
+.gfm .list.unordered {
+  color: #b58900;
+}
+.gfm .raw {
+  font-style: italic;
+}
+.gfm.support {
+  color: #93a1a1;
+}
+.gfm.support.quote {
+  color: #6c71c4;
+}
+.markup.bold {
+  font-weight: bold;
+}
+.markup.italic {
+  font-style: italic;
+}
+.markup.heading {
+  color: #268bd2;
+}
+.markup.link {
+  color: #2aa198;
+}
+.markup.deleted {
+  color: #dc322f;
+}
+.markup.changed {
+  color: #b58900;
+}
+.markup.inserted {
+  color: #2aa198;
+}
+.source.php .storage.type.class {
+  color: #b58900;
+}
+.source.php .storage.type.function {
+  color: #cb4b16;
+}
+.source.php .storage.modifier {
+  color: #b58900;
+}
+.source.php .entity.name.type.class {
+  color: #657b83;
+}
+.source.php .entity.name.function {
+  color: #657b83;
+}
+.source.php .entity.other {
+  color: #657b83;
+}
+.source.php .variable {
+  color: #268bd2;
+}
+.source.php .punctuation.definition {
+  color: #657b83;
+}
+.source.php .punctuation.definition.comment {
+  color: #93a1a1;
+}
+.source.php .punctuation.definition.array {
+  color: #dc322f;
+}
+.source.php .punctuation.definition.string {
+  color: #657b83;
+}
+.source.php .punctuation.definition.variable {
+  color: #859900;
+}
+.source.php .support.function.construct {
+  color: #b58900;
+}
+.source.php .support.function.array {
+  color: #859900;
+}
+.source.php .keyword.operator.class {
+  color: #b58900;
+}
+.source.php .keyword.operator.assignment {
+  color: #859900;
+}
+.source.php .keyword.other {
+  color: #dc322f;
+}
+.source.python .entity {
+  color: #657b83;
+}
+.source.python .entity.name {
+  color: #268bd2;
+}
+.source.python .entity.other {
+  color: #268bd2;
+}
+.source.python .function {
+  color: #268bd2;
+}
+.source.python .function.magic {
+  color: #268bd2;
+}
+.source.python .punctuation.string {
+  color: #2aa198;
+}
+.source.python .keyword.operator {
+  color: #657b83;
+}
+.source.python .keyword.operator.quantifier {
+  color: #2aa198;
+}
+.source.python .keyword.operator.logical {
+  color: #859900;
+}
+.source.python .keyword.control.import {
+  color: #cb4b16;
+}
+.source.python .keyword.other {
+  color: #859900;
+}
+.source.python .constant.language {
+  color: #268bd2;
+}
+.source.python .constant.character {
+  color: #2aa198;
+}
+.source.python .constant.other {
+  color: #dc322f;
+}
+.source.python .entity.name.type.class {
+  color: #268bd2;
+}
+.source.python .variable {
+  color: #657b83;
+}
+.source.python .support.function.builtin {
+  color: #268bd2;
+}
+.source.python .support.type.exception.python {
+  color: #b58900;
+}
+.source.python .support.type.python {
+  color: #268bd2;
+}
+.source.python .storage.type.string {
+  color: #2aa198;
+}
+.source.python .storage.type.class {
+  color: #859900;
+}
+.source.python .storage.type.class.todo {
+  color: #d33682;
+}
+.source.python .storage.type.function {
+  color: #859900;
+}
+.source.python .punctuation.definition.parameters {
+  color: #657b83;
+}
+.source.python .punctuation.section.function.begin {
+  color: #657b83;
+}
+.source.python .punctuation.separator.parameters {
+  color: #657b83;
+}
+.source.ruby .meta.embedded .punctuation.section {
+  color: #dc322f;
+}
+.source.ruby .punctuation.definition {
+  color: #657b83;
+}
+.source.ruby .punctuation.definition.string {
+  color: #dc322f;
+}
+.source.ruby .punctuation.definition.comment {
+  color: #93a1a1;
+}
+.source.ruby .entity.inherited-class {
+  color: #b58900;
+}
+.source.ruby .variable.parameter {
+  color: #657b83;
+}
+.source.ruby .variable.constant {
+  color: #b58900;
+}
+.source.ruby .constant.boolean {
+  color: #2aa198;
+}
+.source.ruby .instance .punctuation.definition {
+  color: #268bd2;
+}
+.source.ruby .class {
+  color: #b58900;
+}
+.source.ruby .class.control {
+  color: #657b83;
+}
+.source.ruby .module {
+  color: #b58900;
+}
+.source.ruby .require .keyword.other.special-method {
+  color: #cb4b16;
+}
+.source.ruby .keyword.other.special-method {
+  color: #cb4b16;
+}
+.source.ruby .keyword.other {
+  color: #859900;
+}
+.source.ruby .keyword.control {
+  color: #859900;
+}
+.source.ruby .keyword.operator {
+  color: #657b83;
+}
+.source.ruby .special-method {
+  color: #268bd2;
+}
+.source.ruby .symbol {
+  color: #2aa198;
+}
+.source.ruby .symbol .punctuation.definition {
+  color: #2aa198;
+}
+.source.ruby .hashkey {
+  color: #dc322f;
+}
+.source.ruby .hashkey .punctuation.definition {
+  color: #dc322f;
+}
+.source.ruby .string.regexp {
+  color: #dc322f;
+}
+.source.ruby .todo {
+  color: #d33682;
+}
+.source.ruby .variable.ruby.global {
+  color: #268bd2;
+}
+.source.ruby .variable.ruby.global .punctuation {
+  color: #268bd2;
+}
+.source.ruby .variable.block {
+  color: #268bd2;
+}
+.source.ruby .variable.self {
+  color: #2aa198;
+}
+.source.ruby .punctuation.separator {
+  color: #657b83;
+}
+.source.ruby .numeric {
+  color: #2aa198;
+}
+.source.ruby .punctuation.section.regexp {
+  color: #dc322f;
+}
+.source.ruby .string.interpolated {
+  color: #2aa198;
+}
+.source.ruby .string.interpolated .embedded.line.ruby .punctuation .source.ruby {
+  color: #dc322f;
+}
+.source.ruby .string.interpolated .embedded.line.ruby .source.ruby {
+  color: #657b83;
+}
+.source.ruby .string.interpolated .embedded.line.ruby .source.ruby .punctuation.array,
+.source.ruby .string.interpolated .embedded.line.ruby .source.ruby .punctuation.function {
+  color: #657b83;
+}
+.source.ruby .support.function {
+  color: #657b83;
+}
+.source.ruby .support.function.kernel {
+  color: #859900;
+}
+.source.scala .variable {
+  color: #586e75;
+}
+.source.scala .declaration {
+  color: #586e75;
+  font-weight: bold;
+}
+.source.scala .comparison {
+  color: #586e75;
+}
+.source.scala .class,
+.source.scala .type {
+  color: #b58900;
+}
+.source.scala .val {
+  font-weight: normal;
+}
+.source.scala .variable {
+  font-weight: bold;
+}
+.source.scala .variable.parameter {
+  color: #6c71c4;
+  font-weight: normal;
+}
+.source.scala .control.flow {
+  color: #586e75;
+  font-weight: bold;
+}
+.source.scala .constant.language {
+  color: #586e75;
+  font-weight: bold;
+}
+.source.scala .function.declaration {
+  color: #6c71c4;
+}
+.source.scala .modifier.other {
+  font-weight: bold;
+}
+.source.scala .package {
+  color: #586e75;
+}
+.source.scala .variable.import {
+  font-weight: normal;
+}
+.source.scala .type .bounds,
+.source.scala .type .class {
+  color: #6c71c4;
+}
+.source.scala .documentation :not(.embedded).link.entity {
+  color: #268bd2;
+  text-decoration: underline;
+}
+.source.scala .documentation :not(.embedded) .class,
+.source.scala .documentation :not(.embedded) .parameter {
+  color: #586e75;
+}
+.source.scala .documentation :not(.embedded) .description {
+  color: #93a1a1;
+}
+.source.scala .embedded {
+  color: #374549;
+  font-style: italic;
+}
+.source.scala .embedded .margin,
+.source.scala .embedded .delimiters {
+  font-style: normal;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="vue-js-">Vue.jsでコンポーネント入門！ハンズオン勉強会</h1>
+<h2 id="web-components-">Web Components とは？</h2>
+<ul>
+<li>Web の再利用可能なパーツ作成の仕様</li>
+</ul>
+<h3 id="-">構成するリソース</h3>
+<ol>
+<li>Custom Elements</li>
+<li>HTML Imports</li>
+<li>HTML Template</li>
+<li>Shadow DOM</li>
+</ol>
+<h3 id="-">再利用可能なパーツを考える上での悩み</h3>
+<ul>
+<li>HTML, CSS, JavaScript 3つの専用言語で構成。</li>
+<li>HTML の複雑な入れ子構造</li>
+<li>CSS の意図しない適用範囲</li>
+<li>JavaScript のDOM構造への依存</li>
+</ul>
+<h3 id="-">利用のメリット</h3>
+<ul>
+<li>マークアップがスッキリ</li>
+<li>スタイルの適用範囲を絞り込む</li>
+<li>複雑な構造を外部から見えなくする</li>
+</ul>
+<h3 id="-">ブラウザの対応状況</h3>
+<p><img src="/Users/naoki.endo/src/github.dena.jp/naoki-endo/hands-on-vuejs-vol2/images/webcomponents_support_browser.png" alt="images/webcomponents_support_browser.png"></p>
+<ul>
+<li>Google 主導でブラウザベンダの足並みバラバラ</li>
+<li>Polyfill は製品で実装実績がとても少ない</li>
+<li>Polymer, X-Tag などのライブラリでも…</li>
+<li>開発から4年でそろそろ？</li>
+<li>Vue.js ならば…</li>
+</ul>
+<h2 id="vue-js-web-components">Vue.js と Web Components</h2>
+<ul>
+<li>Vue.js の2つの重要なコンセプト<ul>
+<li>リアクティブデータバインディング</li>
+<li>コンポーネントシステム</li>
+</ul>
+</li>
+</ul>
+<h3 id="vue-js-">Vue.js のコンポーネントシステム</h3>
+<p>Custom Elements の仕様に沿った構文を実装</p>
+<p>例えば…</p>
+<ul>
+<li>slot 要素</li>
+<li>is 属性</li>
+</ul>
+<h3 id="-">大規模アプリケーション例</h3>
+<p><img src="http://jp.vuejs.org/images/components.png" alt="http://jp.vuejs.org/images/components.png"></p>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>div</span></span><span>&nbsp;</span><span class="meta attribute-with-value id html"><span class="entity other attribute-name id html"><span>id</span></span><span class="punctuation separator key-value html"><span>=</span></span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span class="meta toc-list id html"><span>app</span></span><span class="punctuation definition string end html"><span>&quot;</span></span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>app-nav</span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>app-nav</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag other html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag other html"><span>app-view</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>app-sidebar</span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>app-sidebar</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>app-content</span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>app-content</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag other html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag other html"><span>app-view</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>div</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+<h2 id="-">コンポーネントの作成をやってみよう</h2>
+<p>hands-on-vuejs-vol2-0</p>
+<ul>
+<li><a href="http://codepen.io/naokie/pen/rLwLyd">http://codepen.io/naokie/pen/rLwLyd</a></li>
+</ul>
+<p><img src="/Users/naoki.endo/src/github.dena.jp/naoki-endo/hands-on-vuejs-vol2/images/codepen_save_as_anonymous.png" alt="images/codepen_save_as_anonymous.png"></p>
+<h3 id="vol-1-">Vol.1 成果物</h3>
+<p><img src="/Users/naoki.endo/src/github.dena.jp/naoki-endo/hands-on-vuejs-vol2/images/vol1_sample.png" alt="images/vol1_sample.png"></p>
+<h3 id="vol-1-">Vol.1 テンプレート</h3>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>div</span></span><span>&nbsp;</span><span class="meta attribute-with-value id html"><span class="entity other attribute-name id html"><span>id</span></span><span class="punctuation separator key-value html"><span>=</span></span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span class="meta toc-list id html"><span>my-app</span></span><span class="punctuation definition string end html"><span>&quot;</span></span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="comment block html"><span class="punctuation definition comment html"><span>&lt;!--</span></span><span>&nbsp;新規タスクの追加&nbsp;</span><span class="punctuation definition comment html"><span>--&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;NewTask:</span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>text</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-model</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>newTask</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&nbsp;/&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>button</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-on:click</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>addTodo</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Add</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>button</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>hr</span></span><span>&nbsp;/</span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="comment block html"><span class="punctuation definition comment html"><span>&lt;!--</span></span><span>&nbsp;タスクのリスト表示&nbsp;</span><span class="punctuation definition comment html"><span>--&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-for</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todo&nbsp;in&nbsp;todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>checkbox</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-model</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todo.isCompleted</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&nbsp;/&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>span</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-bind:class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>{&nbsp;&#39;complete&#39;:&nbsp;todo.isCompleted&nbsp;}</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>{{&nbsp;todo.task&nbsp;}}</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>button</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-on:click</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>deleteTodo(todo)</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Delete</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>button</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="comment block html"><span class="punctuation definition comment html"><span>&lt;!--</span></span><span>&nbsp;残りタスクのカウント表示&nbsp;</span><span class="punctuation definition comment html"><span>--&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Remaining&nbsp;Tasks:&nbsp;{{&nbsp;remains&nbsp;}}/{{&nbsp;todos.length&nbsp;}}</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>div</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+<h3 id="vol-1-vue-">Vol.1 Vue インスタンス</h3>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;vm&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>Vue</span></span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;el</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>#my-app</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;マウントする要素</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;data</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;プロキシするすべてのプロパティ</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;newTask</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;todos</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>牛乳を買う</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean false js"><span>false</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>プロテインを買う</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>スポーツドリンクを買う</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean false js"><span>false</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace square js"><span>]</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;computed</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;算出プロパティ</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>remains</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type var js"><span>var</span></span><span>&nbsp;inCompleteList&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>todos</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>filter</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>task</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>return</span></span><span>&nbsp;</span><span class="keyword operator logical js"><span>!</span></span><span class="variable other object js"><span>task</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>isCompleted</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>return</span></span><span>&nbsp;</span><span class="variable other object js"><span>inCompleteList</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>length</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;methods</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;インスタンスメソッド</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>addTodo</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>if</span></span><span>&nbsp;</span><span class="meta brace round js"><span>(</span></span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span>&nbsp;</span><span class="keyword operator comparison js"><span>==</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta brace round js"><span>)</span></span><span>&nbsp;</span><span class="keyword control js"><span>return</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>todos</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>push</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean false js"><span>false</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>deleteTodo</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>todo</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>todos</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>$remove</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>todo</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h3 id="-">再利用可能な単位？</h3>
+<ol>
+<li>同じページで繰り返し表示する（リスト表示）</li>
+<li>サイト内で繰り返し利用する（ウィジェット表示）</li>
+</ol>
+<h3 id="-">今回作成するコンポーネント</h3>
+<ul>
+<li>Todo コンポーネントの作成</li>
+<li>App コンポーネントの作成</li>
+</ul>
+<h3 id="-1-">タスク1つを構成しているパーツをコンポーネント化</h3>
+<h3 id="todo-">Todo コンポーネント</h3>
+<h4 id="html-template-">HTML Template を切り出し</h4>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag script html"><span>script</span></span><span class="text embedded html"><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>text/template</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="meta attribute-with-value id html"><span class="entity other attribute-name id html"><span>id</span></span><span class="punctuation separator key-value html"><span>=</span></span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span class="meta toc-list id html"><span>t_todo</span></span><span class="punctuation definition string end html"><span>&quot;</span></span></span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>checkbox</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-model</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todo.isCompleted</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&nbsp;/&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>span</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-bind:class</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>{&nbsp;&#39;complete&#39;:&nbsp;todo.isCompleted&nbsp;}</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>{{&nbsp;todo.task&nbsp;}}</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>span</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>button</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-on:click</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>deleteTodo(todo)</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Delete</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>button</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>li</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span class="punctuation definition tag html"><span>&lt;/</span></span><span class="entity name tag script html"><span>script</span></span></span><span class="punctuation definition tag html"><span>&gt;</span></span><span>&nbsp;</span></span></div></pre>
+<h4 id="-">切り出した箇所をカスタム要素で置き換え</h4>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>todo</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-for</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todo&nbsp;in&nbsp;todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todo</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todo</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>todo</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+<ul>
+<li>コンポーネントインスタンスは各自にスコープを持っている</li>
+<li>子コンポーネントは親データを参照できない</li>
+</ul>
+<h4 id="props">Props</h4>
+<p>データを子コンポーネントに伝達するオプション</p>
+<ul>
+<li>HTMLの属性として記述<ul>
+<li>大文字小文字の区別なし</li>
+<li>ケバブケース</li>
+</ul>
+</li>
+<li>2つの修飾子<ul>
+<li><code style="font-family: Hack;">.sync</code> を使用して two-way バインディングします</li>
+<li><code style="font-family: Hack;">.once</code> を使用して one-time バインディングします</li>
+</ul>
+</li>
+<li>検証要件を設定可能</li>
+</ul>
+<h4 id="vue-">Vueコンポーネントの作成</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;Todo&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable other object js"><span>Vue</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>extend</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;template</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>#t_todo</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;props</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>todo</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h4 id="-">コンポーネントを登録</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;vm&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>Vue</span></span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;components</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;Todo</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;Todo</span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h4 id="-">動作の確認</h4>
+<ul>
+<li>チェックマークの付け外し</li>
+<li>新規タスクの登録</li>
+<li>タスクの削除</li>
+<li>残りタスクのカウント表示</li>
+</ul>
+<h4 id="-">タスクの削除</h4>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>button</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-on:click</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>deleteTodo(todo)</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Delete</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>button</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+<ul>
+<li>Todo コンポーネントのメソッドではない</li>
+<li>タスクリストは親コンポーネントが保持している</li>
+<li>タスクリストの操作は親コンポーネントの役目</li>
+<li>子コンポーネントはイベントのみ通知</li>
+<li>親子間でのイベント管理が必要に</li>
+</ul>
+<h4 id="-">カスタムイベント</h4>
+<p>コンポーネント間のイベント通信の仕組み</p>
+<ul>
+<li><code style="font-family: Hack;">$on()</code> を使用してイベントをリッスンします</li>
+<li><code style="font-family: Hack;">$emit()</code> を使用して自身のイベントをトリガーします</li>
+<li><code style="font-family: Hack;">$dispatch()</code> を使用して親方向にイベントを送出します</li>
+<li><code style="font-family: Hack;">$broadcast()</code> を使用して子孫方向にイベントを創出します</li>
+</ul>
+<h4 id="todo-">Todo コンポーネントからイベントを送出</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;Todo&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable other object js"><span>Vue</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>extend</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;methods</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>deleteTodo</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>todo</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>$dispatch</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>delete</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;todo</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h4 id="-">親でイベントをリッスン</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;vm&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>Vue</span></span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;events</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="entity name function js"><span>delete</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>todo</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>todos</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>$remove</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>todo</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h2 id="-">ここまでの成果物</h2>
+<p>hands-on-vuejs-vol2-1</p>
+<ul>
+<li><a href="http://codepen.io/naokie/pen/qNjNAw">http://codepen.io/naokie/pen/qNjNAw</a></li>
+</ul>
+<h3 id="-">小さなアプリ（ウィジェット）をコンポーネント化</h3>
+<h3 id="app-">App コンポーネント</h3>
+<h4 id="html-template-">HTML Template を切り出し</h4>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag script html"><span>script</span></span><span class="text embedded html"><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>text/template</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="meta attribute-with-value id html"><span class="entity other attribute-name id html"><span>id</span></span><span class="punctuation separator key-value html"><span>=</span></span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span class="meta toc-list id html"><span>t_app</span></span><span class="punctuation definition string end html"><span>&quot;</span></span></span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="comment block html"><span class="punctuation definition comment html"><span>&lt;!--</span></span><span>&nbsp;div要素で囲む&nbsp;</span><span class="punctuation definition comment html"><span>--&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>div</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NewTask:</span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>text</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-model</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>newTask</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&nbsp;/&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>button</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-on:click</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>addTodo</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Add</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>button</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>hr</span></span><span>&nbsp;/</span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>todo</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-for</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todo&nbsp;in&nbsp;todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todo</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todo</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>todo</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>ul</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Remaining&nbsp;Tasks:&nbsp;{{&nbsp;remains&nbsp;}}/{{&nbsp;todos.length&nbsp;}}</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>div</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span class="punctuation definition tag html"><span>&lt;/</span></span><span class="entity name tag script html"><span>script</span></span></span><span class="punctuation definition tag html"><span>&gt;</span></span><span>&nbsp;</span></span></div></pre>
+<h4 id="-">フラグメントインスタンス</h4>
+<ul>
+<li>テンプレートのコンテンツは、カスタム要素を置き換える</li>
+<li>テンプレートは単一のルート要素を持つのが推奨</li>
+</ul>
+<h4 id="-">切り出した箇所をカスタム要素で置き換え</h4>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>app</span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todos</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>app</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div></pre>
+<h4 id="vue-">Vueコンポーネントの作成</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;App&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable other object js"><span>Vue</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>extend</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;template</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>#t_app</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="punctuation whitespace comment leading js"><span>&nbsp;&nbsp;</span></span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;コンポーネント定義では初期データオブジェクトを返す関数として宣言する</span><span>&nbsp;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>data</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>return</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newTask</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;props</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>todos</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;components</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;Todo</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;Todo</span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h4 id="-">コンポーネントを登録</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;vm&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>Vue</span></span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;el</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>#my-app</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;data</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;todos</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>牛乳を買う</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean false js"><span>false</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>プロテインを買う</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>スポーツドリンクを買う</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean false js"><span>false</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace square js"><span>]</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;events</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="entity name function js"><span>delete</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>todo</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>todos</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>$remove</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>todo</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;components</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;App</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;App</span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h4 id="-">動作の確認</h4>
+<ul>
+<li>チェックマークの付け外し</li>
+<li>新規タスクの登録</li>
+<li>タスクの削除</li>
+<li>残りタスクのカウント表示</li>
+</ul>
+<h4 id="-">新規タスクの登録</h4>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>button</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-on:click</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>addTodo</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Add</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>button</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+<h4 id="app-">App コンポーネントからイベントを送出</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;App&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable other object js"><span>Vue</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>extend</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>data</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>return</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newTask</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;methods</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>addTodo</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>if</span></span><span>&nbsp;</span><span class="meta brace round js"><span>(</span></span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span>&nbsp;</span><span class="keyword operator comparison js"><span>==</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta brace round js"><span>)</span></span><span>&nbsp;</span><span class="keyword control js"><span>return</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>$dispatch</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>add</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h4 id="-">親でイベントをリッスン</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;vm&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>Vue</span></span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;events</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="entity name function js"><span>add</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>newTask</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>todos</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>push</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;newTask</span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean false js"><span>false</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h4 id="-">残りタスクのカウント表示</h4>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;App&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable other object js"><span>Vue</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>extend</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;computed</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>remains</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type var js"><span>var</span></span><span>&nbsp;inCompleteList&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>todos</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>filter</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>task</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>return</span></span><span>&nbsp;</span><span class="keyword operator logical js"><span>!</span></span><span class="variable other object js"><span>task</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>isCompleted</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>return</span></span><span>&nbsp;</span><span class="variable other object js"><span>inCompleteList</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>length</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h3 id="-">再利用可能なパーツの完成</h3>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>div</span></span><span>&nbsp;</span><span class="meta attribute-with-value id html"><span class="entity other attribute-name id html"><span>id</span></span><span class="punctuation separator key-value html"><span>=</span></span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span class="meta toc-list id html"><span>my-app</span></span><span class="punctuation definition string end html"><span>&quot;</span></span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>app</span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todos</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>app</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>app</span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todos</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>app</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>app</span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todos</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>app</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>div</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+<h2 id="-">ここまでの成果物</h2>
+<p>hands-on-vuejs-vol2-2</p>
+<ul>
+<li><a href="http://codepen.io/naokie/pen/oLwLAj">http://codepen.io/naokie/pen/oLwLAj</a></li>
+</ul>
+<h3 id="one-more-thing-">One more thing...</h3>
+<h3 id="app-">App コンポーネントごとに見出しを追加</h3>
+<h4 id="-">スロット</h4>
+<ul>
+<li>コンポーネント使用者がコンテンツを追加する仕組み</li>
+<li>親スコープでコンポーネントにコンテンツを追加</li>
+<li>名前つきスロットで複数持つことも可能</li>
+</ul>
+<h4 id="-slot-">テンプレートに slot 要素を追加</h4>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag script html"><span>script</span></span><span class="text embedded html"><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>text/template</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="meta attribute-with-value id html"><span class="entity other attribute-name id html"><span>id</span></span><span class="punctuation separator key-value html"><span>=</span></span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span class="meta toc-list id html"><span>t_app</span></span><span class="punctuation definition string end html"><span>&quot;</span></span></span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>div</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>slot</span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>slot</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;...</span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>div</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span class="punctuation definition tag html"><span>&lt;/</span></span><span class="entity name tag script html"><span>script</span></span></span><span class="punctuation definition tag html"><span>&gt;</span></span><span>&nbsp;</span></span></div></pre>
+<h4 id="app-">App コンポーネント使用箇所で見出しを追加</h4>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>div</span></span><span>&nbsp;</span><span class="meta attribute-with-value id html"><span class="entity other attribute-name id html"><span>id</span></span><span class="punctuation separator key-value html"><span>=</span></span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span class="meta toc-list id html"><span>my-app</span></span><span class="punctuation definition string end html"><span>&quot;</span></span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag other html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag other html"><span>app</span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todos</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>h1</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>メイン</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>h1</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag other html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag other html"><span>app</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag other html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag other html"><span>app</span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todos</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>h1</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>サブ</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>h1</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag other html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag other html"><span>app</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span>&nbsp;&nbsp;</span><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>app</span></span><span>&nbsp;:</span><span class="entity other attribute-name html"><span>todos</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>todos</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>app</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>div</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></div></pre>
+<h2 id="-">ここまでの成果物</h2>
+<p>hands-on-vuejs-vol2-3</p>
+<ul>
+<li><a href="http://codepen.io/naokie/pen/NAgRWY">http://codepen.io/naokie/pen/NAgRWY</a></li>
+</ul>
+<h3 id="-">やってみよう</h3>
+<h3 id="newtask-">NewTask コンポーネント</h3>
+<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag script html"><span>script</span></span><span class="text embedded html"><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>text/template</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="meta attribute-with-value id html"><span class="entity other attribute-name id html"><span>id</span></span><span class="punctuation separator key-value html"><span>=</span></span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span class="meta toc-list id html"><span>t_newtask</span></span><span class="punctuation definition string end html"><span>&quot;</span></span></span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;NewTask:</span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>input</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>type</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>text</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-model</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>newTask</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&nbsp;/&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;</span></span><span class="entity name tag inline any html"><span>button</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>v-on:click</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>&quot;</span></span><span>addTodo</span><span class="punctuation definition string end html"><span>&quot;</span></span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span><span>Add</span><span class="meta tag inline any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag inline any html"><span>button</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span>&nbsp;&nbsp;</span><span class="meta tag block any html"><span class="punctuation definition tag begin html"><span>&lt;/</span></span><span class="entity name tag block any html"><span>p</span></span><span class="punctuation definition tag end html"><span>&gt;</span></span></span></span></span></div><div class="line"><span class="text html basic"><span class="text embedded html"><span class="punctuation definition tag html"><span>&lt;/</span></span><span class="entity name tag script html"><span>script</span></span></span><span class="punctuation definition tag html"><span>&gt;</span></span><span>&nbsp;</span></span></div></pre>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;NewTask&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable other object js"><span>Vue</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>extend</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;template</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>#t_newtask</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>data</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>return</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newTask</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;methods</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="entity name function js"><span>addTodo</span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control js"><span>if</span></span><span>&nbsp;</span><span class="meta brace round js"><span>(</span></span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span>&nbsp;</span><span class="keyword operator comparison js"><span>==</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta brace round js"><span>)</span></span><span>&nbsp;</span><span class="keyword control js"><span>return</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>$dispatch</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>add-todo</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>newTask</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;App&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable other object js"><span>Vue</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>extend</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;components</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;Todo</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;Todo</span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;NewTask</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;NewTask</span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&nbsp;vm&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>Vue</span></span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;events</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta function json js"><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span class="entity name function js"><span>add-todo</span></span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="keyword operator assignment js"><span>:</span></span><span>&nbsp;</span><span class="storage type function js"><span>function</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>newTask</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&nbsp;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>todos</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>push</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;task</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;newTask</span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;isCompleted</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean false js"><span>false</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta method-call js"><span class="meta arguments js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="keyword operator spread js"><span>...</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h3 id="-">ここまでの成果物</h3>
+<p>hands-on-vuejs-vol2-4</p>
+<ul>
+<li><a href="http://codepen.io/naokie/pen/BzkLyJ">http://codepen.io/naokie/pen/BzkLyJ</a></li>
+</ul></body>
+</html>
