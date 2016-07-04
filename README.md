@@ -585,3 +585,12 @@ var vm = new Vue({
 
 hands-on-vuejs-vol2-4
 - http://codepen.io/naokie/pen/BzkLyJ
+
+
+### 今回のおみやげ
+
+GitHub
+- https://github.com/naokie/hands-on-vuejs-vol2
+
+Codepen
+- http://codepen.io/collection/DoLeNM/
