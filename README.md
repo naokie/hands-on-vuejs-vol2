@@ -6,6 +6,14 @@
 - Web の再利用可能なパーツ作成の仕様
 
 
+### 構成するリソース
+
+1. Custom Elements
+2. HTML Imports
+3. HTML Template
+4. Shadow DOM
+
+
 ### 再利用可能なパーツを考える上での悩み
 
 - HTML, CSS, JavaScript 3つの専用言語で構成。
@@ -21,15 +29,7 @@
 - 複雑な構造を外部から見えなくする
 
 
-### 構成するリソース
-
-1. Shadow DOM
-2. HTML Imports
-3. HTML Template
-4. Custom Elements
-
-
-### ブラウザ対応状況
+### ブラウザの対応状況
 
 
 ![images/webcomponents_support_browser.png](images/webcomponents_support_browser.png)
@@ -76,11 +76,10 @@ Custom Elements の仕様に沿った構文を実装
 
 ## コンポーネントの作成をやってみよう
 
-- 前回（Vol.1）の続き
-  - http://codepen.io/55enokky/pen/GqpmrP
-  - 途中経過の保存のために、ログインしてForkを推奨
-- Todo コンポーネントの作成
-- App コンポーネントの作成
+hands-on-vuejs-vol2-0
+- http://codepen.io/naokie/pen/rLwLyd
+
+![images/codepen_save_as_anonymous.png](images/codepen_save_as_anonymous.png)
 
 
 ### Vol.1 成果物
@@ -156,6 +155,12 @@ var vm = new Vue({
 2. サイト内で繰り返し利用する（ウィジェット表示）
 
 
+### 今回作成するコンポーネント
+
+- Todo コンポーネントの作成
+- App コンポーネントの作成
+
+
 ### タスク1つを構成しているパーツをコンポーネント化
 
 
@@ -229,7 +234,9 @@ var vm = new Vue({
 #### 動作の確認
 
 - チェックマークの付け外し
+- 新規タスクの登録
 - タスクの削除
+- 残りタスクのカウント表示
 
 
 #### タスクの削除
@@ -255,7 +262,7 @@ var vm = new Vue({
 - `$broadcast()` を使用して子孫方向にイベントを創出します
 
 
-#### 子コンポーネントからイベントを送出
+#### Todo コンポーネントからイベントを送出
 
 ```javascript
 var Todo = Vue.extend({
@@ -269,7 +276,7 @@ var Todo = Vue.extend({
 ```
 
 
-#### 親コンポーネントでイベントをリッスン
+#### 親でイベントをリッスン
 
 ```javascript
 var vm = new Vue({
@@ -281,6 +288,12 @@ var vm = new Vue({
   }
 });
 ```
+
+
+## ここまでの成果物
+
+hands-on-vuejs-vol2-1
+- http://codepen.io/naokie/pen/qNjNAw
 
 
 ### 小さなアプリ（ウィジェット）をコンポーネント化
@@ -371,6 +384,77 @@ var vm = new Vue({
 ```
 
 
+#### 動作の確認
+
+- チェックマークの付け外し
+- 新規タスクの登録
+- タスクの削除
+- 残りタスクのカウント表示
+
+
+#### 新規タスクの登録
+
+```html
+<button v-on:click="addTodo">Add</button>
+```
+
+
+#### App コンポーネントからイベントを送出
+
+```javascript
+var App = Vue.extend({
+  data: function() {
+    return {
+      newTask: ''
+    };
+  },
+  ...
+  methods: {
+    addTodo: function() {
+      if (this.newTask == '') return;
+      this.$dispatch('add', this.newTask);
+      this.newTask = '';
+    }
+  }
+});
+```
+
+
+#### 親でイベントをリッスン
+
+```javascript
+var vm = new Vue({
+  ...
+  events: {
+    ...
+    'add': function(newTask) {
+      this.todos.push(
+        { task: newTask, isCompleted: false }
+      );
+    }
+  }
+});
+```
+
+
+#### 残りタスクのカウント表示
+
+```javascript
+var App = Vue.extend({
+  ...
+  computed: {
+    remains: function() {
+      var inCompleteList = this.todos.filter(function(task) {
+        return !task.isCompleted;
+      });
+      return inCompleteList.length;
+    }
+  },
+  ...
+});
+```
+
+
 ### 再利用可能なパーツの完成
 
 ```html
@@ -380,6 +464,12 @@ var vm = new Vue({
   <app :todos="todos"></app>
 </div>
 ```
+
+
+## ここまでの成果物
+
+hands-on-vuejs-vol2-2
+- http://codepen.io/naokie/pen/oLwLAj
 
 
 ### One more thing...
@@ -421,6 +511,12 @@ var vm = new Vue({
   <app :todos="todos"></app>
 </div>
 ```
+
+
+## ここまでの成果物
+
+hands-on-vuejs-vol2-3
+- http://codepen.io/naokie/pen/NAgRWY
 
 
 ### やってみよう
@@ -485,6 +581,7 @@ var vm = new Vue({
 ```
 
 
-### 実装サンプル
+### ここまでの成果物
 
-http://codepen.io/naokie/pen/aZJoGP
+hands-on-vuejs-vol2-4
+- http://codepen.io/naokie/pen/BzkLyJ
