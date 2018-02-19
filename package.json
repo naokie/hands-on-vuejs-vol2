@@ -13,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "reveal-md": "0.0.29"
+    "reveal-md": "1.1.3"
   }
 }
