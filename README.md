@@ -1,5 +1,7 @@
 # Vue.jsでコンポーネント入門！ハンズオン勉強会
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/naokie/hands-on-vuejs-vol2.svg)](https://greenkeeper.io/)
+
 #### 2016/07/05(Tue) @DeNA
 
 ---
